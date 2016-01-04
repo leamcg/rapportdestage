@@ -6,6 +6,21 @@
 
   <h1>Home</h1>
   <p>Hello world! This is a test paragraph</p>
+  <div class="js-isotope-filter">
+    <button data-filter="*">show all</button>
+    <button data-filter=".js-design">design</button>
+    <button data-filter=".js-development">developement</button>
+  </div>
+  <div class="js-isotope">
+    <div class="js-isotope-item js-design">a
+    </div>
+    <div class="js-isotope-item js-development">b
+    </div>
+    <div class="js-isotope-item js-design">c
+    </div>
+    <div class="js-isotope-item js-development">d
+    </div>
+  </div>
   @@include('scripts.html')
 </body>
 </html>
