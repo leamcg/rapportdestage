@@ -10,21 +10,21 @@
 
 
 $i-map: (
-  i-map-path: url("../images/sprite-0396845a.svg"),
-  i-map-width: 84px,
+  i-map-path: url("../images/sprite-9ebb5123.svg"),
+  i-map-width: 94px,
   i-map-height: 32px,
 
-  i-circle-width: 20px,
-  i-circle-height: 20px,
+  i-circle-width: 30px,
+  i-circle-height: 30px,
   i-circle-position: 0 0,
 
   i-facebook-width: 32px,
   i-facebook-height: 32px,
-  i-facebook-position: -20px 0,
+  i-facebook-position: -30px 0,
 
   i-twitter-width: 32px,
   i-twitter-height: 32px,
-  i-twitter-position: -52px 0
+  i-twitter-position: -62px 0
 );
 
 
@@ -32,7 +32,7 @@ $i-map: (
 //===========================================
 
 %i {
-  background-image: url("../images/sprite-0396845a.svg")
+  background-image: url("../images/sprite-9ebb5123.svg")
 }
 
 @mixin extend-i-url($extend: true) {
@@ -55,8 +55,8 @@ $i-map: (
 @mixin i-circle($add-url: true) {
   @include extend-i-url($add-url);
   background-position: 0 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .i-circle {
@@ -65,7 +65,7 @@ $i-map: (
 
 @mixin i-facebook($add-url: true) {
   @include extend-i-url($add-url);
-  background-position: -20px 0;
+  background-position: -30px 0;
   width: 32px;
   height: 32px;
 }
@@ -76,7 +76,7 @@ $i-map: (
 
 @mixin i-twitter($add-url: true) {
   @include extend-i-url($add-url);
-  background-position: -52px 0;
+  background-position: -62px 0;
   width: 32px;
   height: 32px;
 }
