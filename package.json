@@ -1,10 +1,10 @@
 {
-  "name": "gulp-plate",
-  "version": "1.2.1",
-  "description": "Gulp boilerplate for static page generation",
+  "name": "rapportdestage",
+  "version": "0.0.1",
+  "description": "Rapport de stage",
   "repository": {
     "type": "git",
-    "url": "git://github.com/arillo/gulp-plate.git"
+    "url": ""
   },
   "license": "MIT",
   "browserify": {
