@@ -12,3 +12,5 @@ $ ->
   $('.js-isotope-filter').on 'click', 'button', ->
     filterValue = $(this).attr('data-filter')
     $('.js-isotope').isotope filter: filterValue
+    $('button').removeClass('active')
+    $(this).addClass('active')
