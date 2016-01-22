@@ -29,13 +29,36 @@
     width: 100%
     background: blue
 
+.project_link:hover > .project_img
+  opacity: 1
+  transition: opacity 0.6s ease-in-out
+
 .project_portfolio
+  background: url('../images/index_portfolio.jpg') no-repeat center center fixed
+
+.project_w2
+  background: url('../images/index_w2.jpg') no-repeat center center fixed
+
+.project_lakerol
+  background: url('../images/index_lakerol.jpg') no-repeat center center fixed
+
+.project_votingdog
+  background: url('../images/index_votingdog.jpg') no-repeat center center fixed
+
+.project_linkstalker
+  background: url('../images/index_linkstalker.jpg') no-repeat center center fixed
+
+.project_hermur
+  background: url('../images/index_hermur.jpg') no-repeat center center fixed
+
+.project_img
   position: fixed
   top: -15%
   left: -15%
   +size(115%)
-  background: url('../images/index_portfolio.jpg') no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
+  z-index: -1
+  opacity: 0
