@@ -25,6 +25,7 @@ $ ->
   $('.project_link').click ->
     page = $(this).attr('href')
     $('.content').load(page + '.html')
+    $('body').addClass('page_load')
     $('.content').fadeIn(1600)
     $('.back').fadeIn(1600)
     $('.projects_list').fadeOut(1600)
