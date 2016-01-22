@@ -1,0 +1,41 @@
+//============================================
+// Index 3
+//============================================
+
+.projects_list
+  list-style-type: none
+  +pos(0, all)
+  padding-left: 0
+  top: 15%
+  left: 15%
+  // +center-transform
+
+.project_title
+  font-size: $fs-h2 * 2.5
+  display: inline-block
+  position: relative
+  padding-bottom: 3px
+  &:after
+    content: ''
+    display: block
+    margin: auto
+    height: 12px
+    width: 0px
+    position: absolute
+    top: 56px
+    background: transparent
+    transition: width .5s ease, background-color .5s ease
+  &:hover:after
+    width: 100%
+    background: blue
+
+.project_portfolio
+  position: fixed
+  top: -15%
+  left: -15%
+  +size(115%)
+  background: url('../images/index_portfolio.jpg') no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
