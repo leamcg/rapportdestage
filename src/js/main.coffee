@@ -14,3 +14,11 @@ $ ->
     $('.js-isotope').isotope filter: filterValue
     $('button').removeClass('active')
     $(this).addClass('active')
+
+  $(document).ready ->
+    $('.content').load 'w2.html'
+
+  $('.project_link').click ->
+    page = $(this).attr('href')
+    $('.content').load(page + '.html')
+    return false

@@ -2,9 +2,16 @@
 // Index 3
 //============================================
 
+.content
+  +pos(0, all)
+  background-color: red
+  z-index: -1
+
+.project_content, .content
+  +size(100%)
+
 .projects_list
   list-style-type: none
-  +pos(0, all)
   padding-left: 0
   top: 15%
   left: 15%
@@ -33,22 +40,22 @@
   opacity: 1
   transition: opacity 0.6s ease-in-out
 
-.project_portfolio
+.img_portfolio
   background: url('../images/index_portfolio.jpg') no-repeat center center fixed
 
-.project_w2
+.img_w2
   background: url('../images/index_w2.jpg') no-repeat center center fixed
 
-.project_lakerol
+.img_lakerol
   background: url('../images/index_lakerol.jpg') no-repeat center center fixed
 
-.project_votingdog
+.img_votingdog
   background: url('../images/index_votingdog.jpg') no-repeat center center fixed
 
-.project_linkstalker
+.img_linkstalker
   background: url('../images/index_linkstalker.jpg') no-repeat center center fixed
 
-.project_hermur
+.img_hermur
   background: url('../images/index_hermur.jpg') no-repeat center center fixed
 
 .project_img
