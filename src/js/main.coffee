@@ -15,10 +15,21 @@ $ ->
     $('button').removeClass('active')
     $(this).addClass('active')
 
-  $(document).ready ->
-    $('.content').load 'w2.html'
+  $('.project_link').click ->
+    page = $(this).attr('href')
+    $('.content').load(page + '.html')
+    $('.content').fadeIn(1600)
+    $('.projects_list').fadeOut(1600)
+    return false
 
   $('.project_link').click ->
     page = $(this).attr('href')
     $('.content').load(page + '.html')
-    return false
+    $('.content').fadeIn(1600)
+    $('.back').fadeIn(1600)
+    $('.projects_list').fadeOut(1600)
+
+  $('.close_project').click ->
+    $('.content').fadeOut(1600)
+    $('.back').fadeOut(1600)
+    $('.projects_list').fadeIn(1600)

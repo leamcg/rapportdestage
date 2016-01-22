@@ -4,17 +4,29 @@
 
 .content
   +pos(0, all)
-  background-color: red
   z-index: -1
+  display: none
+
+.back
+  +pos(0, all)
+  +size(100px)
+  z-index: 4
+  display: none
 
 .project_content, .content
-  +size(100%)
+  width: 100%
+  min-height: 100%
+
+.project_content
+  padding: 40px
+
+.content_img
+  padding: 20px 0
 
 .projects_list
+  +pos(15% 15%, top left)
   list-style-type: none
   padding-left: 0
-  top: 15%
-  left: 15%
   // +center-transform
 
 .project_title
@@ -23,18 +35,16 @@
   position: relative
   padding-bottom: 3px
   &:after
+    +pos(56px, top)
+    +size(0px, 12px)
     content: ''
     display: block
     margin: auto
-    height: 12px
-    width: 0px
-    position: absolute
-    top: 56px
     background: transparent
     transition: width .5s ease, background-color .5s ease
   &:hover:after
     width: 100%
-    background: blue
+    background: white
 
 .project_link:hover > .project_img
   opacity: 1
@@ -59,9 +69,7 @@
   background: url('../images/index_hermur.jpg') no-repeat center center fixed
 
 .project_img
-  position: fixed
-  top: -15%
-  left: -15%
+  +pos(-15% -15%, top left, fixed)
   +size(115%)
   -webkit-background-size: cover
   -moz-background-size: cover
