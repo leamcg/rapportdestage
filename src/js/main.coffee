@@ -1,6 +1,7 @@
 $ = require 'jquery'
 jQBridget = require 'jquery-bridget'
 Isotope = require 'isotope-layout'
+Masonry = require 'masonry-layout'
 
 $ ->
 
@@ -43,3 +44,7 @@ $ ->
     $('.projects_list').fadeOut(1200)
     $('.back').fadeIn(1200)
     return false
+
+  $('.js-masonry').masonry
+    itemSelector: '.js-grid-item'
+
