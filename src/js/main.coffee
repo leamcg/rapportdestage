@@ -18,19 +18,28 @@ $ ->
   $('.project_link').click ->
     page = $(this).attr('href')
     $('.content').load(page + '.html')
-    $('.content').fadeIn(1600)
-    $('.projects_list').fadeOut(1600)
+    $('.content').fadeIn(1200)
+    $('.projects_list').fadeOut(1200)
     return false
 
   $('.project_link').click ->
     page = $(this).attr('href')
     $('.content').load(page + '.html')
     $('body').addClass('page_load')
-    $('.content').fadeIn(1600)
-    $('.back').fadeIn(1600)
-    $('.projects_list').fadeOut(1600)
+    $('.content').fadeIn(1200)
+    $('.back').fadeIn(1200)
+    $('.projects_list').fadeOut(1200)
 
   $('.close_project').click ->
-    $('.content').fadeOut(1600)
-    $('.back').fadeOut(1600)
-    $('.projects_list').fadeIn(1600)
+    $('.content').fadeOut(1200)
+    $('.back').fadeOut(1200)
+    $('.projects_list').fadeIn(1200)
+
+  $('.about_link').click ->
+    page = $(this).attr('href')
+    $('.content').load(page + '.html')
+    $('.content').fadeIn(1200)
+    # $('.content').show('slide', {direction: 'left'}, 1000)
+    $('.projects_list').fadeOut(1200)
+    $('.back').fadeIn(1200)
+    return false
