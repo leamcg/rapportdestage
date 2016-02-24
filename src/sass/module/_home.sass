@@ -2,141 +2,41 @@
 // Index 3
 //============================================
 
-.project_content
-  background-color: rgb(245,245,245)
-
-.about_link
-  +pos(40px 40px, top right, fixed)
-
-
-// body:before, body:after
-//   +size(100vw, 50vh)
-//   position: fixed
-//   background: red
-//   display: block
-//   content: ''
-//   z-index: 5
-  
-// body:before
-//   top: 0
-//   transform: translateY(-50%)
-
-// body:after
-//   bottom: 0
-//   background: blue
-
-@-webkit-keyframes anim_top
-  0%  
-    transform: translateY(50%)
-  100%
-    transform: translateY(0)
-
-@-moz-keyframes anim_top
-  0%  
-    transform: translateY(50%)
-  100%
-    transform: translateY(0)
-
-@-o-keyframes anim_top
-  0%  
-    transform: translateY(50%)
-  100%
-    transform: translateY(0)
-
-@keyframes anim_top
-  0%  
-    transform: translateY(50%)
-  100%
-    transform: translateY(0)
-
-@-webkit-keyframes anim_bottom
-  0%  
-    transform: translateY(-50%)
-  100%
-    transform: translateY(0)
-
-@-moz-keyframes anim_bottom
-  0%  
-    transform: translateY(-50%)
-  100%
-    transform: translateY(0)
-
-@-o-keyframes anim_bottom
-  0%  
-    transform: translateY(-50%)
-  100%
-    transform: translateY(0)
-
-@keyframes anim_bottom
-  0%  
-    transform: translateY(-50%)
-  100%
-    transform: translateY(0)
-
-.box_top, .box_bottom
-  +size(100%)
-  position: fixed
-  z-index: 5
-  // background-color: red
-
-.box_top
-  top: 0
-  -webkit-animation: anim_top 5s infinite
-  -moz-animation: anim_top 5s infinite
-  -o-animation: anim_top 5s infinite
-  animation: anim_top 5s infinite
-
-// .box_bottom
-//   bottom: 0
-//   -webkit-animation: anim_bottom 5s infinite
-//   -moz-animation: anim_bottom 5s infinite
-//   -o-animation: anim_bottom 5s infinite
-//   animation: anim_bottom 5s infinite
-
-.content
-  +pos(0, all)
-  z-index: -1
-  display: none
-
 .back
   +pos(40px 40px, top left, fixed)
   +size(100px)
   z-index: 4
   display: none
 
-.project_content, .content
+.content
+  +pos(0, all)
+  z-index: -1
+  display: none
   width: 100%
   min-height: 100%
-
-.project_content
-  padding: 40px
-
-.content_img
-  padding: 20px 0
-
-.project_content_title
-  font-size: $fs-h1 * 1.2
-  font-weight: bold
-
-.large_link
-  font-size: $fs-h4
-  text-align: right
-  display: block
-  padding: 20px 0
 
 .projects_list
   +pos(15% 15%, top left)
   list-style-type: none
   padding-left: 0
 
-.project_title
-  font-size: $fs-h2 * 2.5
+.home_title
   display: inline-block
   position: relative
   padding-bottom: 3px
+  font-size: $fs-h2
+  +mq($bp-sm)
+    font-size: $fs-h2 * 2
+  +mq($bp-md)
+    font-size: $fs-h2 * 2.5
   &:after
-    +pos(56px, top)
-    +size(0px, 12px)
+    +pos(20px, top)
+    +size(0px, 8px)
+    +mq($bp-sm)
+      height: 12px
+      top: 44px
+    +mq($bp-md)
+      top: 56px
     content: ''
     display: block
     margin: auto
@@ -146,13 +46,23 @@
     width: 100%
     background: white
 
-.project_img
-  -webkit-filter: grayscale(100%)
-  -moz-filter: grayscale(100%)
-  -ms-filter: grayscale(100%)
-  -o-filter: grayscale(100%)
-  filter: grayscale(100%)
-  filter: gray
+
+// Background images on home page
+//============================================
+
+.home_img
+  +pos(-15% -15%, top left, fixed)
+  +size(115%)
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  z-index: -1
+  opacity: 0
+
+.home_link:hover > .home_img
+  opacity: 1
+  transition: opacity 0.6s ease-in-out
 
 .img_portfolio
   background: url('../images/index_portfolio.jpg') no-repeat center center fixed
@@ -171,17 +81,3 @@
 
 .img_hermur
   background: url('../images/index_hermur.jpg') no-repeat center center fixed
-
-.project_img
-  +pos(-15% -15%, top left, fixed)
-  +size(115%)
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-  z-index: -1
-  opacity: 0
-
-.project_link:hover > .project_img
-  opacity: 1
-  transition: opacity 0.6s ease-in-out
