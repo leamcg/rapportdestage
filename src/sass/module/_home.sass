@@ -44,25 +44,11 @@
     transition: width .5s ease, background-color .5s ease
   &:hover:after
     width: 100%
-    background: white
+    background: $c-cyan
 
 
 // Background images on home page
 //============================================
-
-.home_img
-  +pos(-15% -15%, top left, fixed)
-  +size(115%)
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-  z-index: -1
-  opacity: 0
-
-.home_link:hover > .home_img
-  opacity: 1
-  transition: opacity 0.6s ease-in-out
 
 .img_portfolio
   background: url('../images/index_portfolio.jpg') no-repeat center center fixed
@@ -81,3 +67,17 @@
 
 .img_hermur
   background: url('../images/index_hermur.jpg') no-repeat center center fixed
+
+.home_img
+  +pos(-15% -15%, top left, fixed)
+  +size(115%)
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  z-index: -1
+  opacity: 0
+
+.home_link:hover > .home_img
+  opacity: 1
+  transition: opacity 0.6s ease-in-out
