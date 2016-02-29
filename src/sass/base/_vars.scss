@@ -6,24 +6,24 @@
 // Colors
 //============================================
 
-$primary:     #00f;
-$black:       #111;
+$primary:                         #00f;
+$black:                           #111;
 
-$gray:        #ddd;
-$gray-light:  #f7f7f7;
-$gray-dark:   #767676;
+$gray:                            #ddd;
+$gray-light:                   #f7f7f7;
+$gray-dark:                    #767676;
 
-$color-text:  $black;
-$color-bg:    white;
+$c-grey:              rgb(240,240,240);
+$c-grey-dark:            rgb(30,30,30);
+$c-pink:                rgb(245,84,79);
+$c-cyan:    darken(rgb(43,215,145), 5);
+$c-orange:             rgb(255,102,18);
+$c-blue:                  rgb(0,0,175);
+$c-green:              rgb(156,216,11);
 
-$c-grey:       rgb(240,240,240);
-$c-grey-dark:       rgb(30,30,30);
-$c-yellow:       rgb(255,255,0);
-$c-pink:         rgb(245,84,79);
-$c-cyan:        darken(rgb(43,215,145), 5);
-$c-orange:      rgb(255,102,18);
-$c-blue:           rgb(0,0,175);
-$c-green:       rgb(156,216,11);
+$color-text:                    $black;
+$color-bg:                     $c-grey;
+
 
 // Dimensions
 //============================================
@@ -36,7 +36,7 @@ $space-quarter: $space * 0.25;
 // Typography
 //============================================
 
-$font:      Futura, "Karla", "Helvetica Neue", Arial, sans-serif;
+$font:      Futura, "Karla", Arial, sans-serif;
 $font-mono: monospace, monospace;
 $fs:        16px;
 $lh:        ($space / $fs);

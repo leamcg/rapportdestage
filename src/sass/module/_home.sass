@@ -6,7 +6,6 @@
   +pos(40px 40px, top left, fixed)
   +size(100px)
   z-index: 4
-  display: none
 
 .content
   +pos(0, all)
@@ -16,21 +15,25 @@
   min-height: 100%
 
 .projects_list
-  +pos(15% 15%, top left)
+  +center-transform
   list-style-type: none
   padding-left: 0
+  +mq($bp-sm)
+    left: 30%
+  +mq($bp-md)
+    left: 25%
 
 .home_title
   display: inline-block
   position: relative
   padding-bottom: 3px
-  font-size: $fs-h2
+  font-size: $fs-h2 * 1.3
   +mq($bp-sm)
     font-size: $fs-h2 * 2
   +mq($bp-md)
     font-size: $fs-h2 * 2.5
   &:after
-    +pos(20px, top)
+    +pos(28px, top)
     +size(0px, 8px)
     +mq($bp-sm)
       height: 12px
@@ -46,6 +49,8 @@
     width: 100%
     background: $c-cyan
 
+.close_project
+  color: $c-cyan
 
 // Background images on home page
 //============================================
