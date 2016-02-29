@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('head.html')
-<body>
-  @@include('browser-warning.html')
-<a href="about.html" class="about_link">à propos</a>
-<div class='project_content'>
-  <div class="l-container">
-    <h1 class="project_title u-c-green">portfolio</h1>
-    Afin de me familiariser avec les outils utilisés par Arillo, j'ai pu refaire entièrement mon portfolio, du design au code.
-    <ul>
-      <li>Apprentissage du terminal, github, nodeJS, Gulp plate, Sass</li>
-    </ul>
-    <a href="http://leagardavaud.com" target="_blank" class="large_link">leagardavaud.com</a>
-    <img src="images/portfolio.png" class="u-img-max project_img">
-  </div>
-</div>
 
-<div class="back">
-  <a href="/" class="close_project">close</a>
-</div>
+  @@include('head.html', {
+    "nom": "Portfolio"
+  })
+
+<body class="u-b-blue-light">
+
+  @@include('browser-warning.html')
+
+  <a href="about.html" class="about_link">à propos</a>
+
+  <div class='project_content'>
+    <div class="l-container">
+      <h1 class="project_title">portfolio</h1>
+      Afin de me familiariser avec les outils utilisés par Arillo, j'ai pu refaire entièrement mon portfolio, du design au code.
+      <ul>
+        <li>Apprentissage de l'utilisation du terminal, github, nodeJS, et du framework Gulp plate</li>
+        <li>Utilisation de Sass</li>
+      </ul>
+      <a href="http://leagardavaud.com" target="_blank" class="large_link">leagardavaud.com</a>
+      <img src="images/portfolio.png" alt="Portfolio one page" class="u-img-max project_img u-push-top-double">
+    </div>
+  </div>
+
+  <div class="back">
+    <a href="/" class="close_project">close</a>
+  </div>
 
   @@include('scripts.html')
 </body>

@@ -53,10 +53,17 @@ p, table, blockquote, address, pre, iframe, form
 a
   text-decoration: none
   color: inherit
-
   &:hover
     text-decoration: none
 
+.underline-link
+  background-image: linear-gradient(transparent 50%,$c-pink 50%)
+  background-repeat: no-repeat
+  background-position: left 1.15em
+  transition: color .2s
+  background-size: 100% 3px
+  &:hover
+    color: $c-pink
 
 // Lists (enumeration)
 //============================================

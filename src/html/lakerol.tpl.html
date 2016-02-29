@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('head.html')
-<body>
+
+  @@include('head.html', {
+    "nom": "Läkerol"
+  })
+
+<body class="u-b-green">
+
   @@include('browser-warning.html')
-<a href="about.html" class="about_link">à propos</a>
-<div class='project_content'>
-  <div class="l-container">
-    <h1 class="project_title u-c-green">läkerol</h1>
-    Différents posts pour la page facebook de Läkerol: jeux, concours, vidéos.
-    <a href="https://www.facebook.com/lakerolswitzerland/?ref=ts&fref=ts" target="_blank" class="large_link">facebook/lakerol</a>
-    <video width="1280" height="720" controls class="u-vid-max">
-      <source src="images/lak_hutchenspieler.mp4" type="video/mp4">
-    </video>
-    <div class="g-row js-masonry">
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_fehler01.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_fehler02.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_bjorn.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_cambodia.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_flavour.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_halloween.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_moscou.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_neuesjahr.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_pise.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_stonehenge.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_weihnachten.jpg" class="u-img-max project_img">
-      </div>
-      <div class="g g-md-12 js-grid-item">
-        <img src="images/lak_zimbabwe.jpg" class="u-img-max project_img">
+
+  <a href="about.html" class="about_link">à propos</a>
+
+  <div class='project_content'>
+    <div class="l-container">
+      <h1 class="project_title">läkerol</h1>
+      Création de différents posts pour la page facebook de Läkerol: jeux, concours, posts simples pour les fêtes, mini vidéos, etc.
+      <a href="https://www.facebook.com/lakerolswitzerland/?ref=ts&fref=ts" target="_blank" class="large_link">facebook.com/lakerol</a>
+      <video width="1280" height="720" controls class="u-vid-max u-push-top-double">
+        <source src="images/lak_hutchenspieler.mp4" type="video/mp4">
+      </video>
+      <div class="g-row js-masonry">
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_fehler.jpg" alt="Läkerol fehler game post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_bjorn.jpg" alt="Läkerol bjorn borg post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_cambodia.jpg" alt="Läkerol travel post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_flavour.jpg" alt="Läkerol flavour post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_moscou.jpg" alt="Läkerol travel post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_neuesjahr.jpg" alt="Läkerol new year post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_pise.jpg" alt="Läkerol travel post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_stonehenge.jpg" alt="Läkerol travel post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_weihnachten.jpg" alt="Läkerol christmas post" class="u-img-max project_img">
+        </div>
+        <div class="g g-md-12 js-grid-item">
+          <img src="images/lak_zimbabwe.jpg" alt="Läkerol travel post" class="u-img-max project_img">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="back">
-  <a href="/" class="close_project">close</a>
-</div>
+  <div class="back">
+    <a href="/" class="close_project">close</a>
+  </div>
 
   @@include('scripts.html')
 </body>

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('head.html')
-<body>
+
+  @@include('head.html', {
+    "nom": "Home"
+  })
+
+<body class="u-b-pink">
+
   @@include('browser-warning.html')
 
   <a href="about.html" class="about_link">à propos</a>
@@ -51,9 +56,9 @@
     </li>
 
     <li>
-      <p class="home_link">
-        <div class="home_img img_hermur"></div>
-      </p>
+      <div class="home_link">
+        <div class="home_img"></div>
+      </div>
     </li>
 
   </ul>

@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('head.html')
-<body>
-  @@include('browser-warning.html')
-<a href="about.html" class="about_link">à propos</a>
-<div class='project_content'>
-  <div class="l-container">
-    <h1 class="project_title u-c-pink">voting dog</h1>
-    Développement d'une landing page pour un widget crée par Arillo.
-    <ul>
-      <li>Collaboration avec un designer afin de développer le design en landing page </li>
-      <li>Utilisation de JS, Gulp Plate, Sass</li>
-    </ul>
-    <a href="http://voting.dog" target="_blank" class="large_link">voting.dog</a>
-    <img src="images/vd_04.png" class="u-img-max project_img">
-    <div class="g-row">
-      <div class="g g-sm-12">
-        <img src="images/vd_03.png" class="u-img-max project_img">
-      </div>
-      <div class="g g-sm-12">
-        <img src="images/vd_02.png" class="u-img-max project_img">
-      </div>
-    </div>
-    <img src="images/vd_01.png" class="u-img-max project_img">
-  </div>
-</div>
 
-<div class="back">
-  <a href="/" class="close_project">close</a>
-</div>
+  @@include('head.html', {
+    "nom": "Voting Dog"
+  })
+
+<body class="u-b-pink">
+  @@include('browser-warning.html')
+
+  <a href="about.html" class="about_link">à propos</a>
+
+  <div class='project_content'>
+    <div class="l-container">
+      <h1 class="project_title">voting dog</h1>
+      Développement d'une landing page pour un widget créé par Arillo.
+      <ul>
+        <li>Collaboration avec un designer afin de développer le design en landing page </li>
+        <li>Utilisation de JS, Gulp Plate, Sass</li>
+      </ul>
+      <a href="http://voting.dog" target="_blank" class="large_link">voting.dog</a>
+      <img src="images/vd_04.png" alt="Voting Dog Front page" class="u-img-max project_img u-push-top-double">
+      <div class="g-row">
+        <div class="g g-sm-12">
+          <img src="images/vd_03.png" alt="Voting Dog page - iPad" class="u-img-max project_img">
+        </div>
+        <div class="g g-sm-12">
+          <img src="images/vd_02.png" alt="Voting Dog Usage Steps page - iPad" class="u-img-max project_img">
+        </div>
+      </div>
+      <img src="images/vd_01.png" alt="Voting Dog one page" class="u-img-max project_img">
+    </div>
+  </div>
+
+  <div class="back">
+    <a href="/" class="close_project">close</a>
+  </div>
 
   @@include('scripts.html')
 </body>

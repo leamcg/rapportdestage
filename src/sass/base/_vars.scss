@@ -20,6 +20,7 @@ $c-cyan:    darken(rgb(43,215,145), 5);
 $c-orange:             rgb(255,102,18);
 $c-blue:                  rgb(0,0,175);
 $c-green:              rgb(156,216,11);
+$c-blue-light:         rgb(20,221,218);
 
 $color-text:                    $black;
 $color-bg:                     $c-grey;
@@ -39,7 +40,7 @@ $space-quarter: $space * 0.25;
 $font:      Futura, "Karla", Arial, sans-serif;
 $font-mono: monospace, monospace;
 $fs:        16px;
-$lh:        ($space / $fs);
+$lh:        ($space / $fs) * 1.1;
 
 $fs-h1: 48px;
 $fs-h2: 36px;
